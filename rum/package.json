@@ -1,0 +1,23 @@
+{
+  "name": "rum",
+  "version": "1.0.0",
+  "description": "mobile device",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "generateIcons": "fantasticon ./public/images/svg-fonts-src -o ./public/images/svg-fonts"
+  },
+  "author": "Ruan404",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fantasticon": "^1.2.3",
+    "has-symbols": "^1.0.3",
+    "knex": "^2.3.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "objection": "^3.0.1",
+    "swiper": "^8.4.4"
+  }
+}
