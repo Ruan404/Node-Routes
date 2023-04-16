@@ -1,7 +1,7 @@
 {
   "name": "rum",
   "version": "1.0.0",
-  "description": "mobile device",
+  "description": "A web application built with nodeJs and customized for mobile users who want to know more about available student room rentals",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
