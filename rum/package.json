@@ -1,0 +1,24 @@
+{
+  "name": "rum",
+  "version": "1.0.0",
+  "description": "A web application built with nodeJs and customized for mobile users who want to know more about available student room rentals",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "generateIcons": "fantasticon ./public/images/svg-fonts-src -o ./public/images/svg-fonts"
+  },
+  "author": "Ruan404",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.18.2",
+    "fantasticon": "^1.2.3",
+    "has-symbols": "^1.0.3",
+    "knex": "^2.3.0",
+    "mysql2": "^3.9.7",
+    "nodemon": "^3.1.0",
+    "objection": "^3.0.1",
+    "swiper": "^8.4.4"
+  }
+}
