@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="FR-fr">
-    <head>
-        <title>Room</title>
-        <meta charset ="utf-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
-        <meta name="description" content="description">
-        <link rel="stylesheet" href="/images/svg-fonts/icons.css">
-        <link rel="stylesheet" href="/css/view.css">
-    </head>
-    <body>
+  <head>
+    <title>Room</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta name="description" content="description" />
+    <link rel="stylesheet" href="/images/svg-fonts/icons.css" />
+    <link rel="stylesheet" href="/css/view.css" />
+  </head>
+  <body>
     <header>
-        <span class="logo">
-            <i class="icon icon-logo"></i>
-        </span>
+      <span class="logo">
+        <i class="icon icon-logo"></i>
+      </span>
     </header>
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+      <div class="swiper-wrapper">
         <% var i = 0; cities.forEach(element => { i-=1 %>
-            <div class="swiper-slide">
-                <div class="blur" style="background: url('<%=element.image%>') center no-repeat; background-size: cover; z-index:<%=i%>"></div>
-                <div class="img">
-                    <img src="<%=element.image%>" alt="city image">
-                </div>
-                <div class="cityInfos">
-                    <p><span class="cityName"><%=element.name%>,</span><span class="cityVillage"><%=element.village%></span></p>
-                    <p><%=element.price%></p>
-                    <p><%=element.contact%></p>
-                </div>
-            </div>
-        <%})%>
+        <div class="swiper-slide">
+          <div
+            class="blur"
+            style="
+              background: url('<%=element.image%>') center no-repeat;
+              background-size: cover;
+              z-index: <%=i%>;
+            "
+          ></div>
+          <div class="img-container">
+            <img src="<%=element.image%>" alt="city image" />
+          </div>
+          <div class="cityInfos">
+            <p>
+              <span class="cityName"><%=element.name%>,</span
+              ><span class="cityVillage"><%=element.village%></span>
+            </p>
+            <p><%=element.price%></p>
+            <p><%=element.contact%></p>
+          </div>
         </div>
+        <%})%>
+      </div>
     </div>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                dynamicBullets: true
-            }
-        });
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
     </script>
-    </body>
+  </body>
 </html>
